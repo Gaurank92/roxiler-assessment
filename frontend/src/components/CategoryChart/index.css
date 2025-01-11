@@ -1,0 +1,54 @@
+.category-chart-container {
+  background: linear-gradient(
+    135deg,
+    #3d9e80,
+    #a0d9a0
+  ); /* Modern soft diagonal gradient */
+  border: none; /* Remove hard borders for a cleaner look */
+  border-radius: 16px; /* Smooth, rounded corners for elegance */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow for premium feel */
+  font-family: "Poppins", sans-serif; /* Modern sans-serif font for better readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* Generous padding for breathing room */
+  margin: 20px auto; /* Center the container with auto margins */
+  max-width: 700px; /* Constrain width for a balanced layout */
+  gap: 20px; /* Add spacing between child elements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.category-chart-container:hover {
+  transform: scale(1.02); /* Subtle zoom effect */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.category-chart-container h2 {
+  color: #ffffff; /* White color for better contrast against gradient */
+  font-size: 2rem; /* Larger title size for impact */
+  font-weight: 600; /* Bolder text for emphasis */
+  margin: 0; /* Remove margin to rely on gap for spacing */
+  text-align: center; /* Center align for elegance */
+}
+
+.category-chart-container p {
+  color: #ffffff; /* White text for better contrast */
+  font-size: 1.1rem; /* Slightly larger paragraph font */
+  line-height: 1.6; /* Improve readability with better spacing */
+  margin: 0; /* Remove default margin to prevent overlap */
+  text-align: center; /* Center-align text for balance */
+}
+
+.chart {
+  width: 100%; /* Responsive chart width */
+  max-width: 650px; /* Limit chart size for aesthetics */
+  margin-top: 10px; /* Add space above the chart */
+  border-radius: 8px; /* Round the chart edges for consistency */
+  overflow: hidden; /* Clip content for a polished finish */
+}
+
+.chart canvas {
+  display: block;
+  width: 100%; /* Ensure the chart is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
